@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Ventas por Almacén
+    body
+        h1 Ventas por Almacén
+        table(border="1")
+            tr
+                th Almacén
+                th Total Ventas
+                th Monto Total
+            each almacen in ventasAlmacenes
+                tr
+                    td= almacen.almacen
+                    td= almacen.total_ventas
+                    td $#{almacen.monto_total}

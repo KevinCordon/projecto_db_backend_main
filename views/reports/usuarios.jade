@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Usuarios Registrados
+    body
+        h1 Usuarios Registrados
+        table(border="1")
+            tr
+                th Usuario
+                th Rol
+                th Fecha de Creación
+            each usuario in usuarios
+                tr
+                    td= usuario.usuario
+                    td= usuario.role
+                    td= usuario.fecha_creacion

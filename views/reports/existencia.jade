@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title Existencia del Producto
+    body
+        h1 Existencia del Producto #{codigoProducto}
+        table(border="1")
+            tr
+                th Almacén
+                th Stock
+            each item in existencia
+                tr
+                    td= item.almacen
+                    td= item.stock

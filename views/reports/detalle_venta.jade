@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Detalle de Venta
+    body
+        h1 Detalle de Venta ID #{ventaId}
+        table(border="1")
+            tr
+                th Producto
+                th Cantidad
+                th Subtotal
+            each item in detalle
+                tr
+                    td= item.descripcion
+                    td= item.cantidad
+                    td $#{item.sub_total}

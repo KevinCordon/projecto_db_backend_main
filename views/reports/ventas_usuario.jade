@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        title Ventas por Usuario
+    body
+        h1 Ventas por Usuario
+        table(border="1")
+            tr
+                th Usuario
+                th Total Ventas
+                th Monto Total
+            each user in ventasUsuarios
+                tr
+                    td= user.usuario
+                    td= user.total_ventas
+                    td $#{user.monto_total}

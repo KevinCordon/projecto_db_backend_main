@@ -1,0 +1,18 @@
+doctype html
+html
+    head
+        title Reporte de Productos
+    body
+        h1 Reporte de Productos Disponibles
+        table(border="1")
+            tr
+                th Código
+                th Descripción
+                th Precio
+                th Estado
+            each producto in productos
+                tr
+                    td= producto.cod_producto
+                    td= producto.descripcion
+                    td $#{producto.precio_unitario}
+                    td= producto.estado
